@@ -145,12 +145,11 @@ int main() {
         } else if (penetrationDistance > 0) {
             cout << "Minimum penetration distance: " << penetrationDistance << endl;
         }
+            double averagePenetration = (totalCollisions > 0) ? (totalPenetration / totalCollisions) : 0.0;
+
+        cout << "Maximum penetration distance: " << maxPenetration << endl;
+        cout << "Average penetration distance: " << averagePenetration << endl;
     }
-
-    double averagePenetration = (totalCollisions > 0) ? (totalPenetration / totalCollisions) : 0.0;
-
-    cout << "Maximum penetration distance: " << maxPenetration << endl;
-    cout << "Average penetration distance: " << averagePenetration << endl;
 
     return 0;
 }
